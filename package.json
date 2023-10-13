@@ -1,0 +1,34 @@
+{
+  "name": "miniproject",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/approuter": "^14.3.2",
+    "@sap/cds": "^7.3.0",
+    "@sap/cds-hana": "^2",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
+    "@sap/hana-client": "^2.18.24",
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "hana": "cds deploy --to hana:dat160 --auto-undeploy",
+    "build": "cds build/all --clean"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "hana"
+      }
+    }
+  }
+}

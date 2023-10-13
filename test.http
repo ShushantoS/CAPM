@@ -1,0 +1,39 @@
+###
+GET http://localhost:4004/odata/v4/catalog/Companys
+
+###
+POST http://localhost:4004/odata/v4/catalog/Companys
+Content-Type: application/json
+
+{
+    "ID" : 5,
+    "name" : "Company5",
+    "location" : "Pune"
+}
+
+###
+GET http://localhost:4004/odata/v4/catalog/Figures
+
+###
+POST http://localhost:4004/odata/v4/catalog/Figures
+Content-Type: application/json
+
+{
+    "date" : "2001-01-08",
+    "sox" : 14,
+    "nox" : 10,
+    "particulateMatter" : 2 
+}
+
+###
+GET http://localhost:4004/odata/v4/catalog/Calculate
+
+
+###
+POST http://localhost:4004/odata/v4/catalog/status
+Content-Type: application/json
+
+{
+    "ID" : 2,
+    "zyear" : 2023
+}
